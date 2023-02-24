@@ -30,7 +30,7 @@ public class Book {
      */
     @ManyToMany
     // JpA and Hybernate are going to user a Table(?) Join table?
-    @JoinTable(name = "author book", joinColumns = @JoinColumn(name = "book_id"),
+    @JoinTable(name = "AUTHOR_BOOK", joinColumns = @JoinColumn(name = "book_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"))
     private Set<Author> authors = new HashSet<>();
 
