@@ -8,20 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Book List</h1>
+<h1>Author List</h1>
 
 <table>
     <tr>
         <th>ID</th>
-        <th>Title</th>
-        <th>Publisher</th>
+        <th>First Name</th>
+        <th>Last Name</th>
     </tr>
-    <!--/*@thymesVar id="books" type="edens.zac.spring6webapp.controllers.BookController"*/-->
-    <tr th:each="book: ${books}">
-        <td th:text="${book.id}"></td>
-        <td th:text="${book.title}"></td>
-        <td th:text="${book.title}"></td>
-        <td th:text="${book.publisher.publisherName}"></td>
+    <!--/*@thymesVar id="authors" type="edens.zac.spring6webapp.controllers.AuthorController"*/-->
+    <tr th:each="author: ${authors}">
+        <td th:text="${author.id}"></td>
+        <td th:text="${author.firstName}"></td>
+        <td th:text="${author.lastName}"></td>
     </tr>
     <br>
 </table>
